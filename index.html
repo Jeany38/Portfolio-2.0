@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">JYC</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jyvenche</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello It's me</h3>
+        <h1>Jean Y. Chevalier</h1>
+        <h3>And I'm a <span>Front-end developer</span></h3>
+        <p>
+          With a strong background in Computer Information Systems and a passion
+          for creating engaging digital experiences, I’m here to bring your
+          ideas to life. Explore my portfolio and see how creativity meets
+          technology.
+        </p>
+        <div class="social-media">
+          <a href="https://www.facebook.com/jyvenche" target="blank"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="https://www.instagram.com/jyvenchenelou/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://x.com/home" target="_blank"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/jean-chevalier/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <a href="projects.html" class="btn">View My Work</a>
+      </div>
+      <div class="home-img">
+        <img src="profil5.jpg" alt="Jean Y. Chevalier" />
+      </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="profil3.jpg" alt="Jean Y. Chevalier" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Front-end developer</span></h3>
+        <p>
+          Welcome! I am Jean Y. Chevalier, a passionate Front-End Developer with
+          a robust background in Computer Information Systems. I hold an
+          associate degree in this field and am currently pursuing a bachelor’s
+          degree in Computer Networking and Cybersecurity. My journey in
+          technology has been driven by a deep curiosity and an eagerness to
+          innovate and create impactful solutions. Through my work, I aim to
+          blend aesthetics with functionality, ensuring every project not only
+          looks great but also performs seamlessly.
+        </p>
+        <a href="about.html" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- featured projects section design -->
+    <section class="projects" id="projects">
+      <div class="projects-content">
+        <h2 class="heading">Featured <span>Projects</span></h2>
+        <div class="boxes">
+          <div class="box project-item">
+            <h3>E-commerce Revolution</h3>
+            <p>
+              A cutting-edge e-commerce platform built with React and Node.js,
+              designed to deliver seamless and engaging shopping experiences.
+            </p>
+          </div>
+          <div class="box project-item">
+            <h3>Creative Portfolio</h3>
+            <p>
+              A sleek and responsive portfolio website showcasing my projects
+              and skills, meticulously crafted using HTML, CSS, and JavaScript.
+            </p>
+          </div>
+          <div class="box project-item">
+            <h3>Tech Insight Blog</h3>
+            <p>
+              A dynamic blog platform powered by Vue.js and Firebase, created to
+              share innovative insights and tutorials in the tech industry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="skills-section">
+    <div class="container">
+      <h2>Skills and <span>Technologies</span></h2>
+      <div class="skills-list">
+        <div class="skill-item">
+          <h3>HTML5</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <h3>CSS3</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <h3>Network Security</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <h3>Firewall Configuration</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <h3>Penetration Testing</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="social-media">
+          <a href="https://www.facebook.com/jyvenche" target="blank"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="https://www.instagram.com/jyvenchenelou/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://x.com/home" target="_blank"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/jean-chevalier/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <p>&copy; 2024 Jean Y. Chevalier. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>

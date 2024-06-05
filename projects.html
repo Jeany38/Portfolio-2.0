@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">JYC</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jyvenche</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="project-gallery">
+        <h2>My <span>Projects</span></h2>
+        <div class="project-card">
+          <img
+            src="Inventory.png"
+            alt="Inventory"
+          />
+          <h3>Inventory Management System</h3>
+          <p>
+            An Inventory Management System developed using Python and MySQL.
+              This system allows businesses to track and manage their inventory
+              efficiently, including inventory levels, stock movements, and
+              supplier information.
+          </p>
+          
+        </div>
+
+        <div class="project-card">
+          <img
+            src="website.png"
+            alt="Website"
+          />
+          <h3>Website Redesign</h3>
+          <p>
+            A website redesign project for a small business client. The
+              redesign focused on improving user experience, enhancing visual
+              appeal, and optimizing the site for mobile responsiveness.
+              Technologies used include HTML5, CSS3, and JavaScript.
+          </p>
+          
+        </div>
+
+        <div class="project-card">
+          <img
+            src="security.png"
+            alt="security"
+          />
+          <h3>Network Security Implementation</h3>
+          <p>Implemented network security measures including firewalls,
+            intrusion detection systems, and VPNs for a corporate network.</p>
+          
+        </div>
+
+        <div class="project-card">
+          <img
+            src="Cyber.png"
+            alt="cybersecurity"
+          />
+          <h3>Cybersecurity Risk Assessment</h3>
+          <p>
+            Conducted a comprehensive cybersecurity risk assessment for a
+            financial institution, identifying vulnerabilities and
+            recommending mitigation strategies.
+          </p>
+        </div>
+        <div class="project-card">
+          <img
+            src="Database.webp"
+            alt="database"
+          />
+          <h3>Database Management System Development</h3>
+          <p>
+            Developed a custom database management system using SQL and Python
+              to streamline data storage and retrieval processes for a
+              healthcare organization.
+          </p>
+          
+        </div>
+      </section>
+    </main>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="social-media">
+          <a href="https://www.facebook.com/jyvenche" target="blank"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a href="https://www.instagram.com/jyvenchenelou/" target="_blank"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="https://x.com/home" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/jean-chevalier/" target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+        <p>&copy; 2024 Jean Y. Chevalier. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>

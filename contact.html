@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header design -->
+    <nav id="desktop-nav">
+      <div class="logo">JYC</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jyvenche</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+        <section class="contact-form">
+            <h2>Contact <span>Me</span></h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+   <!-- footer design -->
+   <footer class="footer">
+    <div class="footer-content">
+      <div class="social-media">
+        <a href="https://www.facebook.com/jyvenche" target="blank"><i class="bx bxl-facebook-circle"></i></a>
+        <a href="https://www.instagram.com/jyvenchenelou/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="https://x.com/home" target="_blank"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/jean-chevalier/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <p>&copy; 2024 Jean Y. Chevalier. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- custom js -->
+  <script src="script.js"></script>
+</body>
+</html>
